@@ -1,0 +1,133 @@
+1. uptime
+	-Tell how long the system has been running.
+	-uptime  gives a one line display of the following information.
+       	  The current time, how long the system has  been  running, 
+	how many  users are currently logged on, and the system 
+	load averages for the past 1, 5, and 15 minutes.
+
+[root@localhost classroom]# uptime
+
+2. last 
+	-show listing of last logged in users
+	
+	[root@localhost classroom]#last
+
+3. To know the architecture of your OS
+	[root@localhost classroom]#arch             
+
+4. 	 [root@localhost classroom]#reboot or  init 6                     #Restart server
+	[root@localhost classroom]#poweroff or init 0                  #To shut down the server
+	[root@localhost classroom]# dmesg                                 #Check boot process logs
+
+ 5.ps
+
+ps shows process status. Use this command to determine a running application or confirm an expected process.
+For example, if you want to check for a running Tomcat web server, you use ps with its options to obtain the process ID of Tomcat.
+
+[root@localhost classroom]# ps -ef | grep tomcat
+
+
+ 6  tree
+	list contents of directories in a tree-like format
+	[root@localhost admin]# tree
+
+
+7. ls
+ 	List file and folders in the current directory.
+
+	Display all files (hidden + non-hidden).
+
+	[root@localhost admin]# ls -la
+8. cd Command
+
+	Change directory from the current directory to another one.
+	[root@localhost admin]# cd /home
+
+9.cp Command
+
+	Copy the source to target.
+	Parameters    -i
+	Interactive mode means wait for the confirmation if there are files on the target will be overwritten.
+	-r
+	Recursive copy means include subdirectories if they found.
+	[root@localhost admin]# cp <source> <destination>
+	copy one dir into the other directory
+	[root@localhost batch53]# cp -ir batch52 batch53
+
+10.mv Command
+
+	Move the source to target and remove the source.
+	-i
+	Interactive mode means wait for the confirmation if there are files on the target will be overwritten
+
+11. rm Command
+
+	Delete file or directory and you must use –r in case you want to delete a directory.
+	-r
+	Recursive delete means delete all subdirectories if found.
+	-i
+	Interactive means wait till confirmation
+	
+	[root@localhost batch53]# rm -rf batch52
+12.mkdir Command
+
+	Create a new directory.
+
+13.rmdir Command
+
+	Delete a directory
+	
+	[root@localhost batch53]# rmdir batch52
+
+14. free
+	to check the remaining space in the disk
+    [root@localhost ~]# free -h
+
+15. copy the directory(only files) into another directory
+
+[root@localhost shellscripts]# cp Loops/* /home/admin/bashprgms
+
+
+copy the directory into other destination folder
+ [root@localhost shellscripts]# cp -R <source_folder> <destination_folder>
+
+16. to check the installed software
+	[root@ansibleserver play]# rpm -qa | grep ansible
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
